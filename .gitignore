@@ -1,0 +1,54 @@
+# .gitignore for Golang Backend API
+
+*.log
+*.tmp
+*.lock
+*.pid
+*.seed
+*.DS_Store
+
+# Golang
+*.exe
+*.test
+*.prof
+*.cover
+*.out
+
+# Environtment
+.env
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Golang dependencies
+vendor/
+Gopkg.lock
+go.sum
+
+# Golang build
+build/
+bin/
+pkg/
+cover/
+test/
+
+# Golang generated files
+*.pb.go
+*.pb.gw.go
+*.swagger.json
+
+# Docker
+docker-compose.override.yml
+docker-compose.dev.yml
+Dockerfile*
+
+# Kubernetes
+*.yaml
+*.yml
