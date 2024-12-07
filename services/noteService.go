@@ -76,10 +76,10 @@ func updateNoteStatus(id, status string, value bool) error {
 	switch status {
 	case "archived":
 		note.Archived = value
-		note.Favorite = !value
+		note.Favorite = false
 	case "favorite":
 		note.Favorite = value
-		note.Archived = !value
+		note.Archived = false
 	}
 
 	if err := config.DB.Save(&note).Error; err != nil {
